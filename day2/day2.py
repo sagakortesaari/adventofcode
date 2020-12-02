@@ -10,9 +10,9 @@ def part_1():
         times_min = int(interval[0])
         times_max = int(interval[1])
         char = arr[count+1][0]
-        stringen = arr[count+2]
+        text = arr[count+2]
 
-        counter = stringen.count(char)
+        counter = text.count(char)
 
         if counter >= int(times_min) and counter <= int(times_max):
             valid += 1
