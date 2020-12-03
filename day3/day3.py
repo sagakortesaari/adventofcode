@@ -19,11 +19,15 @@ def day_3(right, downtwo):
     return trees
 
 
+
 right1 = day_3(1, False)
 right3 = day_3(3, False)
+## Part 1
+print(right3)
 right5 = day_3(5, False)
 right7 = day_3(7, False)
 right1down2 = day_3(1, True)
+## Part 2
 print(right1*right3*right5*right7*right1down2)
 
 
