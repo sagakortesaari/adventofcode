@@ -2,10 +2,6 @@ f = open("input.txt", "r")
 inputlines = f.readlines()
 inputlines = [line.strip() for line in inputlines]
 
-# find out the earliest bus you can take to the airport
-# id of bus multiplied by numbers of minutes we'll need to wait
-
-
 def part_1():
     waitingtimes = {}
     timestamp = int(inputlines[0])
@@ -25,6 +21,7 @@ def part_2():
     pairs = [(int(buses[i]), int(buses[i]) - i) for i in range(0, len(buses)) if buses[i] != "x"]
 
     # chinese number theorem
+    # tried using a brute force solution at first, was impossible
     M = 1
     for num, m_i in pairs:
         M *= num
