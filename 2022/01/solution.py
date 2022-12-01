@@ -8,9 +8,8 @@ def most_calories(lines):
 
       if curr_cals > most_cals:
         most_cals = curr_cals
-      
-      elf_cals.append(curr_cals)
 
+      elf_cals.append(curr_cals)
       curr_cals = 0
       continue 
 
@@ -24,5 +23,5 @@ with open("input.txt", "r") as f:
   lines = f.readlines()
 
 res = most_calories(lines)
-print("The elf carrying the most calories is carrying", res[0], "calories")
-print("The top three elves together carrying", sum(res[1][0:3]), "calories")
+print("Part 1: The elf carrying the most calories is carrying", res[0], "calories")
+print("Part 2: The top three elves are together carrying", sum(res[1][0:3]), "calories")
