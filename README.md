@@ -1,4 +1,3 @@
-# Advent of Code 2020
-Solutions to AoC 2020 in Python. 🐍 
+# Advent of Code 🕯️
 
-💜 had no time/energy to finish all 25 days, but made it to day 18 atleast! 
+2020: had no time/energy to finish all 25 days, but made it to day 18 atleast! 
